@@ -6,7 +6,7 @@ function Mole(props) {
         // Feel fress to adjust this number
         let randSeconds = Math.ceil(Math.random() * 5500)
         let timer = setTimeout(() => {
-            props.setDisplayMode(false)
+            props.toggle(false)
         }, randSeconds)
         return() => clearTimeout(timer)
     })

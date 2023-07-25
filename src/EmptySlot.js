@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import MoleHill from './images/molehill.png'
 
-const EmptySlot = (props) => {
+function EmptySlot(props) {
 
     useEffect(() => {
         let randSeconds = Math.ceil(Math.random() * 5000)
